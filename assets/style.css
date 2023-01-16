@@ -106,11 +106,54 @@ border-right: 5px solid black;
   color: black;
 }
 
-.text-wrapper{
+#project-1{
   position: absolute;
-  bottom: 8px;
-  left: 16px;
+  bottom: 8%;
+  left: 17%;
+  color: white;
 }
+
+#project-2 {
+  position: absolute;
+  bottom: 23%;
+  left: 34%;
+  color: white;
+}
+
+#project-3 {
+  position: absolute;
+  bottom: 23%;
+  left: 34%;
+  color: white;
+}
+
+#project-4 {
+  position: absolute;
+  bottom: 23%;
+  left: 34%;
+  color: white;
+}
+
+#project-5 {
+  position: absolute;
+  bottom: 23%;
+  left: 34%;
+  color: white;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1104px) {
