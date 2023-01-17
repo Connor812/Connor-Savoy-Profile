@@ -3,20 +3,31 @@
   margin: 0px;
 }
 
+:root {
+    --brown: brown; 
+    --white: white;
+    --black: rgb(29, 29, 29);
+    --dark-brown: rgb(109, 28, 28);
+}
+
+
 header {
   padding: 30px 30px 30px 0px;
-  background-color: brown;
-  color: white;
+  background-color: var(--brown);
+  color: var(--white);
   display: flex;
   justify-content: space-between;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--black);
+  align-items: center;
 }
 
 header nav h1 {
   font-size: 60px;
-  background-color: aqua;
+  background-color: var(--dark-brown);
   padding: 10px 10px 10px 50px;
+  margin-right: 10px;
 }
+
 
 header .nav {
   font-size: 25px;
@@ -24,15 +35,31 @@ header .nav {
   align-items: center;
 }
 
-a {
+li {
+  list-style-type: none;
+}
+
+header a {
   text-decoration: none;
   color: white;
 }
 
+header img {
+  width: 150px;
+  border-radius: 100%;
+  justify-content: center;
+}
+
+header .profile-picture {
+  display: flex;
+  justify-content: center;
+}
+
 .background-img {
-  background-image: url(./images/fence-background.jpg);
+  background-image: url(./images/background.jpg);
+  background-size: cover;
   height: 170px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--black);
   margin-bottom: 30px;
 }
 
@@ -40,14 +67,17 @@ a {
   float: right;
   font-size: 50px;
   margin: 75px 18px 0px 0px;
-  color: white;
+  color: var(--white);
 }
+
+
 
 /* grid container */
 
 .center-grid {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 
@@ -55,104 +85,156 @@ a {
   display: grid;
   grid-template-columns: 25% 75%;
   width: 80%;
-  gap: 80px 50px;
+  gap: 60px 50px;
+  margin-right: 0px;
   
 }
 
 .about-me {
 font-size: 50px;
 border-right: 5px solid black;
+padding-bottom: 30px;
 }
 
 .work-projects {
   font-size: 50px;
   border-right: 5px solid black;
+  text-align: center;
   }
   
+  .contact-me {
+    font-size: 50px;
+    border-right: 5px solid black;
+    text-align: center;
+    float: left;
+    }
 
-.projects-center {
-  
+.projects-center { 
   text-align: center;
 }
 
  
   
   .main-project {
-   
-    width: 70%;
-    border: 6px solid blue;
+    width: 75%;
+    border: 6px solid var(--brown);
     margin: 10px;
-    opacity: 0.8;
+    opacity: 85%;
+    transition-duration: 0.4s;
   }
 
 .project-2, .project-3, .project-4, .project-5 {
-  width: 33.5%;
-  height: 18%;
-  margin: 10px;
-  border: 6px solid blue;
-  opacity: 99%;
+  width: 70%;
+  /* margin: 10px; */
+  border: 6px solid var(--brown);
+  opacity: 85%;
+  transition-duration: 0.4s;
 }
 
-.projects-center img:hover {
-  border-color: red;
-  background-color: blue;
+
+
+main img:hover {
   opacity: 1;
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+header a:hover {
+  text-decoration: underline var(--white);
+}
+
+footer a:hover {
+  text-decoration: underline var(--brown);
 }
 
 .content-wrapper {
   position: relative;
-  text-align: center;
-  color: black;
+}
+
+.project-2 ,.project-4 {
+  margin-left: 20%;
+}
+
+.project-3, .project-5 {
+  margin-right: 20%;
 }
 
 #project-1{
   position: absolute;
-  bottom: 8%;
-  left: 17%;
-  color: white;
+  bottom: 21%;
+  left: 12%;
+  color: var(--white);
 }
 
 #project-2 {
   position: absolute;
-  bottom: 23%;
-  left: 34%;
-  color: white;
+  bottom: 21%;
+  left: 24%;
+  color: var(--white);
 }
 
 #project-3 {
   position: absolute;
   bottom: 23%;
-  left: 34%;
-  color: white;
+  left: 4%;
+  color: var(--white);
 }
 
 #project-4 {
   position: absolute;
-  bottom: 23%;
-  left: 34%;
-  color: white;
+  bottom: 21%;
+  left: 24%;
+  color: var(--white);
 }
 
 #project-5 {
   position: absolute;
   bottom: 23%;
-  left: 34%;
-  color: white;
+  left: 4%;
+  color: var(--white);  
 }
+
+main h1 {
+  background-color: var(--brown);
+  padding: 10px;
+  font-size: 170%;
+}
+
 
 .wrap {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
+}
+
+.wrap-children {
+  width: 50%;
 }
 
 
+footer {
+  display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
+ .footer a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 15px
+}
 
-
-
+.footer ul {
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  
+}
 
 
 
@@ -160,7 +242,6 @@ border-right: 5px solid black;
   /* header */
   header nav h1 {
     padding: 20px;
-    background-color: red;
     font-size: 50px;
   }
 
@@ -187,12 +268,60 @@ border-right: 5px solid black;
     text-align: end;
     margin: 30px 10px 0px 0px;
   }
+
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 80%;
+  gap: 32px 50px;
+  margin-right: 0px;
+  }
+
+
+
+.about-me {
+  text-align: center;
+  border-bottom: 5px solid var(--black);
+  border-right: 0px;
 }
+
+.about-me-description {
+  text-align: center;
+}
+
+.work-projects {
+  text-align: center;
+  border-bottom: 5px solid var(--black);
+  border-right: 0px;
+}
+
+main h1 {
+  font-size: 20px;
+}
+
+.contact-me {
+  text-align: center;
+  border-bottom: 5px solid var(--black);
+  border-right: 0px;
+}
+
+.footer {
+  margin-bottom: 30px;
+}
+
+footer nav ul {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+}
+
 
 @media screen and (max-width: 569px) {
   header nav h1 {
     padding: 20px;
-    background-color: red;
     font-size: 30px;
   }
 
@@ -208,8 +337,19 @@ border-right: 5px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 12px;
+    font-size: 20px;
   }
+
+  main h1 {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+.footer a {
+  font-size: 18px;
+}
+
+
 }
 
 
@@ -226,6 +366,10 @@ Photo by <a href="https://unsplash.com/@alexkixa?utm_source=unsplash&utm_medium=
 Photo by <a href="https://unsplash.com/@josef_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Josef</a> on <a href="https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilya Pavlov</a> on <a href="https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@georgeprentzas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Prentzas</a> on <a href="https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Photo by <a href="https://unsplash.com/@taylorannwright?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Wright</a> on <a href="https://unsplash.com/s/photos/red-brick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
   
 
 

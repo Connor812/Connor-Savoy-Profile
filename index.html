@@ -15,22 +15,25 @@
 
   <header>
     <nav class="header">
-      <h1>Connor's Profile</h1>
+      <h1>Connor Savoy</h1>
     </nav>
+    <nav class="profile-picture">
+    <img src="./assets/images/profolio-picture.png" alt="Profile Picture">
+  </nav>
     <nav class="nav">
       <ul>
         <li>
-          <a href="#">About Me</a>
+          <a href="#about-me">About Me</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="#">Work</a>
+          <a href="#work-projects">Work</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="#">Contact Me</a>
+          <a href="#contact-me">Contact Me</a>
         </li>
       </ul>
       <ul>
@@ -52,18 +55,12 @@
     <article class="grid-container">
       <!-- About me Side Header -->
 
-      <aside class="about-me">About Me</aside>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        repellat veritatis officiis id sed eos libero officia iusto tempore
-        eveniet! Quae sed dolorum quisquam qui necessitatibus repudiandae.
-        Corporis, temporibus iure. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Repellendus repellat veritatis officiis id sed eos
-        libero officia iusto tempore eveniet! Quae sed dolorum quisquam qui
-        necessitatibus repudiandae. Corporis, temporibus iure.
+      <aside class="about-me" id="about-me">About Me</aside>
+      <p class="about-me-description">
+        Hello everyone! My name is Connor Savoy and this is my first year learning to code. I don't have to much expierence yet but I am building on my knowledge of coding day by day. I eventually want to make a career out of what I've learned at the Toronto University Bootcamp. I took some  coding classes throughout highschool and I really enjoyed them.
       </p>
 
-      <aside class="work-projects">Work Projects</aside>
+      <aside class="work-projects" id="work-projects">Work Projects</aside>
 
       <figure class="projects-center">
         <a href="#">
@@ -75,7 +72,7 @@
           </div>
         </a>
         <section class="wrap">
-          <a href="#">
+          <a href="#" class="wrap-children">
             <div class="content-wrapper">
               <img src="./assets/images/project-2.jpg" alt="Second picture" class="project-2" />
               <div id="project-2">
@@ -84,7 +81,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="#" class="wrap-children">
             <div class="content-wrapper">
               <img src="./assets/images/project-3.jpg" alt="Third picture" class="project-3" />
 
@@ -93,7 +90,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="wrap-children" >
             <div class="content-wrapper">
               <img src="./assets/images/project-4.jpg" alt="Fourth picture" class="project-4" />
 
@@ -102,7 +99,7 @@
               </div>
             </div>
           </a>
-          <a href="#">
+          <a href="#" class="wrap-children">
             <div class="content-wrapper">
               <img src="./assets/images/project-5.jpg" alt="Firth picture" class="project-5" />
 
@@ -113,22 +110,33 @@
           </a>
 
         </section>
-      
+        
+   
       </figure>
-    
+      
+      <aside class="contact-me" id="contact-me">Contact Me</aside>
+      
+      <footer class="footer">
+        <nav>
+          <ul>
+          <li><a href="#">519-403-8039</a></li>
+          <li><a href="#">connorsavoy812@gmail.com</a></li>
+          <li><a href="https://github.com/Connor812">Github</a></li>
+          <li><a href="https://twitter.com/">Twitter</a></li>
+          <li><a href="https://open.spotify.com/">Spotify</a></li>
+        </ul>
+        </nav>
+      </footer>
+
     </article>
-  
+   
   </main>
 
-  <article>
-    <div>
-      <a href="#">Phone Number</a>
-      <a href="#">Email</a>
-      <a href="#">Github</a>
-      <a href="#">Twitter</a>
-      <a href="#">Spotify</a>
-    </div>
-  </article>
+  
+
+  
+
+  
 </body>
 
 </html>
