@@ -4,12 +4,13 @@
 }
 
 :root {
-    --brown: brown; 
-    --white: white;
-    --black: rgb(29, 29, 29);
-    --dark-brown: rgb(109, 28, 28);
+  --brown: brown;
+  --white: rgb(255, 245, 231);
+  --black: rgb(29, 29, 29);
+  --dark-brown: rgb(109, 28, 28);
 }
 
+/* Header */
 
 header {
   padding: 30px 30px 30px 0px;
@@ -21,27 +22,32 @@ header {
   align-items: center;
 }
 
-header nav h1 {
+header div h1 {
   font-size: 60px;
   background-color: var(--dark-brown);
   padding: 10px 10px 10px 50px;
   margin-right: 10px;
 }
 
-
 header .nav {
   font-size: 25px;
+}
+
+/* Navagational Links */
+
+.links {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 li {
   list-style-type: none;
+  padding: 0px 15px;
 }
 
 header a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 header img {
@@ -54,6 +60,8 @@ header .profile-picture {
   display: flex;
   justify-content: center;
 }
+
+/* Image under the header */
 
 .background-img {
   background-image: url(./images/background.jpg);
@@ -70,9 +78,7 @@ header .profile-picture {
   color: var(--white);
 }
 
-
-
-/* grid container */
+/* Grid container */
 
 .center-grid {
   display: flex;
@@ -80,63 +86,64 @@ header .profile-picture {
   margin-bottom: 40px;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: 25% 75%;
   width: 80%;
   gap: 60px 50px;
   margin-right: 0px;
-  
 }
 
+/* Article Section */
+
 .about-me {
-font-size: 50px;
-border-right: 5px solid black;
-padding-bottom: 30px;
+  font-size: 50px;
+  border-right: 5px solid var(--black);
+  padding-bottom: 30px;
 }
 
 .work-projects {
   font-size: 50px;
-  border-right: 5px solid black;
-  text-align: center;
-  }
-  
-  .contact-me {
-    font-size: 50px;
-    border-right: 5px solid black;
-    text-align: center;
-    float: left;
-    }
-
-.projects-center { 
+  border-right: 5px solid var(--black);
   text-align: center;
 }
 
- 
-  
-  .main-project {
-    width: 75%;
-    border: 6px solid var(--brown);
-    margin: 10px;
-    opacity: 85%;
-    transition-duration: 0.4s;
-  }
+.contact-me {
+  font-size: 50px;
+  border-right: 5px solid var(--black);
+  text-align: center;
+  float: left;
+}
 
-.project-2, .project-3, .project-4, .project-5 {
+.projects-center {
+  text-align: center;
+}
+
+.main-project {
+  width: 75%;
+  border: 6px solid var(--brown);
+  margin: 10px;
+  opacity: 85%;
+  transition-duration: 0.4s;
+}
+
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
   width: 70%;
-  /* margin: 10px; */
   border: 6px solid var(--brown);
   opacity: 85%;
   transition-duration: 0.4s;
 }
 
-
+/* Hover over image changes the opacity, rounds corners */
 
 main img:hover {
   opacity: 1;
   border-radius: 20px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 header a:hover {
@@ -151,47 +158,39 @@ footer a:hover {
   position: relative;
 }
 
-.project-2 ,.project-4 {
+/* Image placements and text placements over the image */
+
+.project-2,
+.project-4 {
   margin-left: 20%;
 }
 
-.project-3, .project-5 {
+.project-3,
+.project-5 {
   margin-right: 20%;
 }
 
-#project-1{
+#project-1 {
   position: absolute;
   bottom: 21%;
-  left: 12%;
+  left: 13%;
   color: var(--white);
 }
 
-#project-2 {
-  position: absolute;
-  bottom: 21%;
-  left: 24%;
-  color: var(--white);
-}
-
-#project-3 {
-  position: absolute;
-  bottom: 23%;
-  left: 4%;
-  color: var(--white);
-}
-
+#project-2,
 #project-4 {
   position: absolute;
   bottom: 21%;
-  left: 24%;
+  left: 25%;
   color: var(--white);
 }
 
+#project-3,
 #project-5 {
   position: absolute;
   bottom: 23%;
-  left: 4%;
-  color: var(--white);  
+  left: 5%;
+  color: var(--white);
 }
 
 main h1 {
@@ -199,7 +198,6 @@ main h1 {
   padding: 10px;
   font-size: 170%;
 }
-
 
 .wrap {
   display: flex;
@@ -212,19 +210,19 @@ main h1 {
   width: 50%;
 }
 
+/* Footer */
 
 footer {
-  display:flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
- .footer a{
+.footer a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-size: 30px;
-  margin: 15px
+  margin: 15px;
 }
 
 .footer ul {
@@ -232,20 +230,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
-  
 }
 
-
+/* Makes page responsive */
 
 @media screen and (max-width: 1104px) {
-  /* header */
-  
+
   header {
     padding: 30px;
   }
-  
-  header nav h1 {
+
+  header div h1 {
     padding: 20px;
     font-size: 50px;
   }
@@ -263,74 +258,72 @@ footer {
     justify-content: center;
   }
 
-  /* Background-img  */
+  .links {
+    flex-direction: column;
+  }
 
   .background-img {
     height: 100px;
   }
+
   .background-img h1 {
     font-size: 30px;
     text-align: end;
     margin: 30px 10px 0px 0px;
   }
 
-
   .grid-container {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 80%;
-  gap: 32px 50px;
-  margin-right: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 80%;
+    gap: 32px 50px;
+    margin-right: 0px;
   }
 
+  .about-me {
+    text-align: center;
+    border-bottom: 5px solid var(--black);
+    border-right: 0px;
+  }
 
+  .about-me-description {
+    text-align: center;
+  }
 
-.about-me {
-  text-align: center;
-  border-bottom: 5px solid var(--black);
-  border-right: 0px;
+  .work-projects {
+    text-align: center;
+    border-bottom: 5px solid var(--black);
+    border-right: 0px;
+  }
+
+  main h1 {
+    font-size: 20px;
+  }
+
+  .contact-me {
+    text-align: center;
+    border-bottom: 5px solid var(--black);
+    border-right: 0px;
+  }
+
+  .footer {
+    margin-bottom: 30px;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
-
-.about-me-description {
-  text-align: center;
-}
-
-.work-projects {
-  text-align: center;
-  border-bottom: 5px solid var(--black);
-  border-right: 0px;
-}
-
-main h1 {
-  font-size: 20px;
-}
-
-.contact-me {
-  text-align: center;
-  border-bottom: 5px solid var(--black);
-  border-right: 0px;
-}
-
-.footer {
-  margin-bottom: 30px;
-}
-
-footer nav ul {
-display: flex;
-flex-direction: column;
-text-align: center;
-}
-
-}
-
 
 @media screen and (max-width: 569px) {
-  
+
   header {
     padding: 30px;
   }
-  
-  header nav h1 {
+
+  header div h1 {
     padding: 20px;
     font-size: 30px;
   }
@@ -355,17 +348,10 @@ text-align: center;
     padding: 2px;
   }
 
-.footer a {
-  font-size: 18px;
+  .footer a {
+    font-size: 18px;
+  }
 }
-
-
-}
-
-
-
-
-
 
 /* 
 
@@ -379,11 +365,5 @@ Photo by <a href="https://unsplash.com/@georgeprentzas?utm_source=unsplash&utm_m
 Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vishnu Mohanan</a> on <a href="https://unsplash.com/photos/pfR18JNEMv8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 Photo by <a href="https://unsplash.com/@taylorannwright?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taylor Wright</a> on <a href="https://unsplash.com/s/photos/red-brick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-  
-
-
 
 */
-
-

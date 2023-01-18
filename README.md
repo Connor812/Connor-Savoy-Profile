@@ -15,6 +15,25 @@ This webpage will be use for potential employeers to look at my skills as a code
 
 Link to Webpage:  https://connor812.github.io/Connor-Savoy-Profile/
 
+## Credit
+
+Photo by Michael Dziedzic: https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Alexandre Debiève: https://unsplash.com/@alexkixa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Daniel Josef: https://unsplash.com/@josef_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Ilya Pavlov: https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by George Prentzas: https://unsplash.com/@georgeprentzas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Vishnu Mohanan: https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Vishnu Mohanan: https://unsplash.com/@vishnumaiea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+Photo by Taylor Wright: https://unsplash.com/@taylorannwright?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+
 ## License
 
 GNU GENERAL PUBLIC LICENSE
